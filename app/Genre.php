@@ -10,6 +10,8 @@
             'name', 'color'
         ];
 
+        protected $table = "genres";
+
         public function books() {
             return $this->hasMany(Book::class);
         }
