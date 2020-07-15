@@ -53,7 +53,7 @@
                 'title' => 'required',
                 'genre_id' => [
                     'required',
-                    Rule::exists('categories')
+                    Rule::exists('genres', 'id')
                 ],
                 'review' => 'required|min:1|max:5',
                 'rating' => 'required',
